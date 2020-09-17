@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.planetnest.actionaideyewitnessapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.STORAGE" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".IntroActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".PictureActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:label="Capture image"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.WithActionBar"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".VideoActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:label="Record video"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.WithActionBar"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".AudioActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:label="Capture audio"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.WithActionBar"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".BlogActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:label="Blog about something"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.WithActionBar"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:label="Login"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Sweet"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".SignupActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:label="Sign up"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Sweet"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".AddEventActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:label="Create Event"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Event"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".EventAttendeeActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:label="Add Attendee"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Sweet"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".AdminActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:label="Admin section"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Event"
+            android:windowSoftInputMode="adjustResize" />
+        <provider
+            android:name=".GenericFileProvider"
+            android:authorities="${applicationId}.org.planetnest.actionaideyewitnessapp.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+        <receiver android:name=".NotificationPublisher" />
+    </application>
+
+</manifest>

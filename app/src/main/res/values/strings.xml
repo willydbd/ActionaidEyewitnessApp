@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Actionaid Event capture app</string>
+    <array name="event_types">
+        <item>Workshop</item>
+        <item>Training</item>
+        <item>Sensitization</item>
+        <item>Capacity Building</item>
+        <item>Town Hall meeting</item>
+        <item>Advocacy visit</item>
+        <item>Campaign</item>
+        <item>Rally</item>
+        <item>Fundraising</item>
+        <item>Others</item>
+    </array>
+    <array name="genders">
+        <item>Female</item>
+        <item>Male</item>
+    </array>
+    <array name="ages">
+        <item>30 below</item>
+        <item>30-45</item>
+        <item>45 &amp; above</item>
+    </array>
+</resources>

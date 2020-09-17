@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/themered"
+    tools:context="org.planetnest.actionaideyewitnessapp.AdminActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout_attendance"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingEnd="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingStart="16dp"
+            android:paddingTop="24dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/txt_event_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:paddingStart="5dp"
+                android:text="Event title"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead.Inverse" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/pane_attendee_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/label_attendance_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:hint="Attendee name"
+                    android:inputType="textEmailAddress" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/input_attendance_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter attendee phone number"
+                    android:inputType="phone" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_pull_records"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:padding="12dp"
+                    android:text="Check"
+                    android:textColor="@color/white" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_record_attendance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:padding="12dp"
+                    android:text="Record"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_go_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:text="Go back"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead.Inverse" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_admin_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingEnd="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingStart="16dp"
+            android:paddingTop="24dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:paddingStart="5dp"
+                    android:text="Current Events List"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse" />
+
+                <Spinner
+                    android:id="@+id/spinner_current_events"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:paddingStart="5dp"
+                android:text="What would you like to do?"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead.Inverse" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_refresh_events"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:text="Refresh Events List"
+                android:textColor="@color/white" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_add_attendance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:text="Add attendance"
+                android:textColor="@color/white" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_register_attendees"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:text="Register new attendees"
+                android:textColor="@color/white" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_create_event"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:text="Create New Event"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

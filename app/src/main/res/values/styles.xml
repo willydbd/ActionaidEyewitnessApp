@@ -1,0 +1,64 @@
+<resources>
+
+    <!-- Base application theme. -->
+        <!-- Customize your theme here. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorActionaid</item>
+        <item name="colorPrimaryDark">@color/colorActionaid</item>
+        <item name="colorAccent">#ffe</item>
+    </style>
+
+    <style name="AppTheme.WithActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorActionaid</item>
+        <item name="colorPrimaryDark">@color/colorActionaid</item>
+        <item name="colorAccent">#ffe</item>
+    </style>
+
+    <style name="AppTheme.Sweet" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorActionaid</item>
+        <item name="colorPrimaryDark">@color/colorActionaid</item>
+        <item name="colorAccent">@color/primary_darker</item>
+
+        <item name="colorControlNormal">@color/iron</item>
+        <item name="colorControlActivated">@color/oil</item>
+        <item name="colorControlHighlight">@color/white</item>
+        <item name="android:textColorHint">@color/iron</item>
+        <item name="android:textColorPrimary">@color/white</item>
+
+        <item name="colorButtonNormal">@color/primary_darker</item>
+    </style>
+
+    <style name="AppTheme.Event" parent="AppTheme.WithActionBar">
+        <item name="colorPrimary">@color/colorActionaid</item>
+        <item name="colorPrimaryDark">@color/colorActionaid</item>
+        <item name="colorAccent">@color/primary_darker</item>
+
+        <item name="colorControlNormal">@color/iron</item>
+        <item name="colorControlActivated">@color/oil</item>
+        <item name="colorControlHighlight">@color/white</item>
+        <item name="android:textColorHint">@color/iron</item>
+        <item name="android:textColorPrimary">@color/white</item>
+
+        <item name="colorButtonNormal">@color/primary_darker</item>
+    </style>
+
+    <style name="AppTheme.Dark.Dialog" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">@color/white</item>
+        <item name="android:textColorPrimary">@color/iron</item>
+        <item name="android:background">@color/colorActionaid</item>
+    </style>
+
+    <style name="AppTheme.Sweet.Dialog" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">@color/white</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:background">@color/colorActionaid</item>
+
+        <item name="colorControlNormal">@color/iron</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlHighlight">@color/white</item>
+        <item name="android:textColorHint">@color/iron</item>
+
+        <item name="colorButtonNormal">@color/primary_darker</item>
+    </style>
+
+</resources>

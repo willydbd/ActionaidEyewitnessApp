@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D42629"
+    android:fitsSystemWindows="true"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    tools:context="org.planetnest.actionaideyewitnessapp.BlogActivity">
+
+    <LinearLayout
+        android:id="@+id/desc_pane"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/themered"
+        android:minHeight="250dp"
+        android:orientation="vertical"
+        android:paddingBottom="25dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/issues_identified"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Issues Identified"
+            android:inputType="text"
+            android:textColor="#fff"
+            android:textColorHint="#addd" />
+
+        <EditText
+            android:id="@+id/directly_affected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Group of people mostly/directly affected"
+            android:inputType="text"
+            android:textColor="#fff"
+            android:textColorHint="#addd" />
+
+        <EditText
+            android:id="@+id/indirectly_affected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Group of people indirectly affected"
+            android:inputType="text"
+            android:textColor="#fff"
+            android:textColorHint="#addd" />
+
+        <EditText
+            android:id="@+id/estimated_popu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Estimated population affected"
+            android:inputType="text"
+            android:textColor="#fff"
+            android:textColorHint="#addd" />
+
+        <EditText
+            android:id="@+id/impact_aan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Impact (what should AAN do)?"
+            android:inputType="text"
+            android:textColor="#fff"
+            android:textColorHint="#addd" />
+
+        <EditText
+            android:id="@+id/people_benefit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="How many people will/has benefit(ed) from AAN intervention?"
+            android:textColor="#fff"
+            android:textColorHint="#addd" />
+
+        <EditText
+            android:id="@+id/expected_output"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="What is/are the outputs/expected output"
+            android:textColor="#fff"
+            android:textColorHint="#addd" />
+
+        <EditText
+            android:id="@+id/expected_outcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="What is/are the outcome(s)/expected outcome"
+            android:textColor="#fff"
+            android:textColorHint="#addd" />
+
+    </LinearLayout>
+</ScrollView>
